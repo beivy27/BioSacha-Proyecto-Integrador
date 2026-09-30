@@ -1,0 +1,44 @@
+BioSacha Mobile — Semana 14
+Evidencia técnica
+
+biosacha-mobile-semana14@1.0.0 /Users/beivyrivera/Downloads/BioSacha-Mobile-Semana14
+└── expo@57.0.20
+
+
+biosacha-mobile-semana14@1.0.0 /Users/beivyrivera/Downloads/BioSacha-Mobile-Semana14
+├── expo-camera@57.0.5
+├── expo-image-picker@57.0.18
+└── expo-location@57.0.18
+
+
+18:        "NSCameraUsageDescription": "BioSacha utiliza la cámara para capturar fotografías de especies vegetales asociadas a los registros botánicos.",
+19:        "NSLocationWhenInUseUsageDescription": "BioSacha utiliza la ubicación mientras se realiza un registro para asociar la observación botánica con el lugar donde fue identificada."
+33:        "android.permission.CAMERA",
+34:        "android.permission.ACCESS_COARSE_LOCATION",
+35:        "android.permission.ACCESS_FINE_LOCATION"
+
+services/database.ts:33:      foto_uri TEXT,
+services/database.ts:34:      latitud REAL,
+services/database.ts:35:      longitud REAL,
+services/database.ts:36:      precision_ubicacion REAL,
+services/database.ts:110:    PRAGMA user_version = 2;
+services/database.ts:128:    ["foto_uri", "TEXT"],
+services/database.ts:129:    ["latitud", "REAL"],
+services/database.ts:130:    ["longitud", "REAL"],
+services/database.ts:131:    ["precision_ubicacion", "REAL"],
+services/database.ts:146:  await db.execAsync("PRAGMA user_version = 2");
+services/database.ts:157:    user_version: number;
+services/database.ts:158:  }>("PRAGMA user_version");
+services/database.ts:177:    version: version?.user_version ?? 0,
+services/outboxService.ts:15:  foto_uri?: string | null;
+services/outboxService.ts:16:  latitud?: number | null;
+services/outboxService.ts:17:  longitud?: number | null;
+services/outboxService.ts:18:  precision_ubicacion?: number | null;
+services/outboxService.ts:67:        foto_uri,
+services/outboxService.ts:68:        latitud,
+services/outboxService.ts:69:        longitud,
+services/outboxService.ts:70:        precision_ubicacion,
+services/outboxService.ts:92:      datos.foto_uri ?? null,
+services/outboxService.ts:93:      datos.latitud ?? null,
+services/outboxService.ts:94:      datos.longitud ?? null,
+services/outboxService.ts:95:      datos.precision_ubicacion ?? null,
