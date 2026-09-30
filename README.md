@@ -1,4 +1,4 @@
-# BioSacha - Proyecto Integrador
+[B# BioSacha - Proyecto Integrador
 
 ## Descripción del proyecto
 
@@ -79,6 +79,10 @@ BioSacha-Proyecto-Integrador
 
 ---
 
-## Proyecto académico
 
-Desarrollado para la asignatura de Aplicaciones Móviles.
+
+## Evidencias audiovisuales
+
+Lista de reproducción con las demostraciones del funcionamiento del proyecto BioSacha:
+
+https://youtube.com/playlist?list=PLPaCB1IjS47I0xGhbSy8STw5rxORer6-v&si=m27otglhEvhWfaGH
